@@ -32,7 +32,7 @@ const TodaySalesDashboard = () => {
   useEffect(() => {
     const fetchSalesData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/todays-sales');
+        const response = await fetch('https://sales-dashboard-backend.vercel.app/api/todays-sales');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
