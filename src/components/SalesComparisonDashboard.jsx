@@ -24,7 +24,7 @@ const SalesComparisonDashboard = () => {
         setError(null);
 
         try {
-            const response = await fetch(`http://localhost:5000/api/sales-comparison?date1=${date1}&date2=${date2}`);
+            const response = await fetch(`https://sales-dashboard-backend.vercel.app/api/sales-comparison?date1=${date1}&date2=${date2}`);
             if (!response.ok) {
                 throw new Error('Failed to fetch comparison data');
             }
